@@ -10,22 +10,239 @@
 }
 
 .header {
+  position: relative;
+  display: flex;
+  align-items: center;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.logo {
+  width: 183px;
+  height: 32px;
+  z-index: 4;
 }
-
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+.header__title {
+  width: 730px;
+  margin: 0 0 0 64px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+  z-index: 3;
+}
+.header__subtitle {
+  margin: 0;
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  z-index: 2;
+}
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+.header__main-illustration {
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.header__square-pic {
+  position: absolute;
+  width: 568px;
+  height: 568px;
+  right: 0;
+  top: 64px;
+  background-color: #2f80ed;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 100px;
+}
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.two-columns__brief {
+  margin: 0;
+  color: #2f80ed;
+  width:175px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.two-columns__main-text {
+  margin: 0;
+  width: 80%;
+  min-width: 784px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.two-columns__paragraph {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+.two-columns__paragraph:nth-of-type(2) {
+  margin: 30px 0 30px;
+}
+.two-columns__span-accent {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+}
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.section-title {
+  text-align: center;
+  width: 60%;
+  margin: 0 0 20px 0;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+.section-subtitle {
+  text-align: center;
+  width: 60%;
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+.table {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  width: 1100px;
+}
+tbody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-collapse: collapse;
+}
+.table__cell {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-top: 80px;
+}
+.table__heading {
+  text-align: left;
+  padding: 0;        /*  убирает внутренние отступы в <th> */
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+.table__text {
+  margin: 20px 0 0 0;
+  padding: 0;        /*  убирает внутренние отступы в <td> */
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.feynman {
+  position: relative;
+  height: 890px;
+  background-color: #f2f2f2;
+  padding-top: 100px;
+  z-index: -2;
+}
+.feynman__title {
+  margin: 0 auto 70px;
+  width: 648px;
+  text-align: center;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+.feynman__subtitle {
+  margin: 0 auto 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+}
+.feynman__link {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  text-decoration: none;
+  color: #2f80ed;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+}
+.feynman__illustration {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 867px;
+  height: 637px;
+  z-index: -1;
+}
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #1f1f1f;
+  padding: 90px 0 90px;
+}
+.section-title_theme_dark {
+  color: white;
+}
+.section-subtitle_theme_dark {
+  color: white;
+}
+.table_theme_dark {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  width: 1100px;
+}
+tbody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-collapse: collapse;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+}
+
+.table__heading_theme_dark {
+  color: white;
+}
+.table__text_theme_dark {
+  color: white;
 }

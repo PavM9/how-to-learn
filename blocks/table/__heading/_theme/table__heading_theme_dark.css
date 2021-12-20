@@ -1,0 +1,8 @@
+.table__heading_theme_dark {
+  counter-increment: rule 0;
+  color: white;
+}
+.table__heading_theme_dark::before {
+  counter-increment: rule;
+  content: counter(rule);
+}

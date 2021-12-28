@@ -16,7 +16,7 @@
         к обучению вы можете использовать в своей жизни?
         <a class="header__link" href="https://habr.com/ru/post/38838">Узнать &rarr;</a>
       </p>
-      <img class="header__main-illustration" src="./images/header-image.png" alt="Главная иллюстрация">
+      <img class="header__main-illustration" src="./images/header-image.png" alt="Фрагмент картины 'Опять двойка'">
       <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
@@ -47,33 +47,33 @@
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
-        <article class="cards">
-          <div class="cards__item">
-            <img class="cards__image" src="./images/cards-attention.png" alt="Карточка внимание">
+        <ul class="cards">
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-attention.png" alt="Сборник эссе в руках">
             <h3 class="cards__title">Два вида внимания</h3>
             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
-          </div>
-          <div class="cards__item">
-            <img class="cards__image" src="./images/cards-recall.png" alt="Карточка recall">
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-recall.png" alt="Скульптура мальчик со свирелью">
             <h3 class="cards__title">Recall</h3>
             <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
-          </div>
-          <div class="cards__item">
-            <img class="cards__image" src="./images/cards-interliving.png" alt="Карточка интерливинг">
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-interliving.png" alt="Множество людей в общественном пространстве">
             <h3 class="cards__title">Интерливинг</h3>
             <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
-          </div>
-          <div class="cards__item">
-            <img class="cards__image" src="./images/cards-question.png" alt="Карточка вопросы">
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-question.png" alt="Одинокий человек в большом пустом холле">
             <h3 class="cards__title">Вопросы</h3>
             <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
-          </div>
-          <div class="cards__item">
-            <img class="cards__image" src="./images/cards-competence.png" alt="Карточка иллюзия компетентности">
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-competence.png" alt="Стопка книг на ладони">
             <h3 class="cards__title">Иллюзия компетентности</h3>
             <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
-          </div>
-        </article>
+          </li>
+        </ul>
       </section>
 
       <section class="video">
@@ -154,12 +154,12 @@
         <article class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения
             миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем,
             кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания,
             которые приносят успех в школе, карьере и жизни.
-          </p>
-          <h3 class="khan__quote-author">Джордж Лукас</h3>
+          </blockquote>
+          <cite class="khan__quote-author">Джордж Лукас</cite>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Обложка книги Весь мир — школа">
@@ -219,12 +219,28 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <a class="resources__logo" href="https://arzamas.academy/"></a>
-          <a class="resources__logo" href="https://nplus1.ru/"></a>
-          <a class="resources__logo" href="https://strelka.com/ru"></a>
-          <a class="resources__logo" href="https://polka.academy/"></a>
-        </div>
+        <ul class="resources__logo-zone">
+          <li>
+            <a href="https://arzamas.academy/">
+              <img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Логотип Arzamas">
+            </a>
+          </li>
+          <li>
+            <a href="https://nplus1.ru/">
+              <img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Логотип N+1">
+            </a>
+          </li>
+          <li>
+            <a href="https://strelka.com/ru">
+              <img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Логотип Стрелки">
+            </a>
+          </li>
+          <li>
+            <a href="https://polka.academy/">
+              <img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Логотип Полки">
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
